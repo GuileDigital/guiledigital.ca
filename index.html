@@ -32,14 +32,31 @@
   "@type": "ProfessionalService",
   "name": "Guile Digital Security",
   "image": "https://guiledigital.ca/logo.png",
+  "url": "https://guiledigital.ca",
+  "priceRange": "$$",
+  
+  // 1. Geographic Location Definition
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Edmonton",
     "addressRegion": "AB",
     "addressCountry": "CA"
   },
-  "url": "https://guiledigital.ca",
-  "priceRange": "$$",
+  
+  // 2. Exact Service Area (Tells Google you serve the whole region)
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Greater Edmonton Area"
+  },
+
+  // 3. Digital Contact Point (Since you don't use a physical storefront)
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "curtis@guiledigital.ca",
+    "contactType": "customer service",
+    "availableLanguage": "en"
+  },
+
   "knowsAbout": [
     "Cybersecurity",
     "Microsoft 365 Security",
