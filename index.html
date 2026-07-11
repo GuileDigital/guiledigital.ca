@@ -6,7 +6,7 @@
 
 <!-- Core SEO Tags -->
 <title>Guile Digital Security | Microsoft 365 & Cloud Cybersecurity Consulting</title>
-<meta name="description" content="Expert cybersecurity consulting for small & medium businesses. Specializing in Microsoft 365 hardening, Defender XDR, Entra ID, and Sentinel deployment.">
+<meta name="description" content="Expert cybersecurity consulting for small & medium businesses in Edmonton, Alberta. Specializing in Microsoft 365 hardening, Defender XDR, and Entra ID.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://guiledigital.ca">
 
@@ -24,6 +24,30 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-T7GE5958PL');
+</script>
+  
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Guile Digital Security",
+  "image": "https://guiledigital.ca/logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Edmonton",
+    "addressRegion": "AB",
+    "addressCountry": "CA"
+  },
+  "url": "https://guiledigital.ca",
+  "priceRange": "$$",
+  "knowsAbout": [
+    "Cybersecurity",
+    "Microsoft 365 Security",
+    "Cloud Security",
+    "Identity Governance",
+    "Security posture reviews"
+  ]
+}
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -90,8 +114,8 @@ body::before{
 }
 
 .logo-card{
-    background:white;
-    border-radius:24px;
+    background: #f4f7fc; 
+    border: 1px solid rgba(255,255,255,0.1);
     padding:35px;
     display:inline-block;
     box-shadow:
@@ -227,10 +251,23 @@ h1{
     line-height:1.6;
 }
 
-.footer{
-    margin-top:40px;
-    color:#9bb0db;
-    font-size:14px;
+.footer {
+    margin-top: 60px;
+    line-height: 1.6;
+    grid-column: span 2; /* Ensures the footer sits nicely across both columns on desktop screens */
+}
+
+.footer .compliance {
+    color: #9fbdf8; 
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.footer .copyright {
+    color: #7a8fae; 
+    font-size: 13px;
 }
 
 @media(max-width:900px){
@@ -246,6 +283,9 @@ h1{
     }
     .services{
         grid-template-columns:1fr;
+    }
+    .footer{
+        grid-column: span 1;
     }
 }
 </style>
@@ -266,7 +306,7 @@ h1{
 
     <div>
         <div class="badge">
-            Website Launching Soon
+            Accepting Select Q3 2026 Engagements
         </div>
 
         <h1>
@@ -281,7 +321,7 @@ h1{
         </p>
 
         <div class="role">
-            Curtis Guile • Principal Security Consultant
+            Curtis Guile • Principal Security Consultant • Edmonton, Alberta
         </div>
 
         <div class="cta-group">
@@ -323,15 +363,21 @@ h1{
                 <h3>IT Consulting</h3>
                 <p>Trusted guidance for infrastructure, cloud services and cybersecurity planning.</p>
             </div>
-        </div>
+        </div> <!-- Closes .services -->
 
-        <div class="footer">
+    </div> <!-- Closes the right text column grid area -->
+
+    <div class="footer">
+        <p class="compliance">
+            Aligning small business operations with CIS Benchmarks & NIST guidelines.
+        </p>
+        <p class="copyright">
             © 2026 Guile Digital Security. All Rights Reserved.
-        </div>
+        </p>
     </div>
 
-</div>
-</section>
+</div> <!-- Closes .container -->
+</section> <!-- Closes .hero -->
 
 </body>
 </html>
